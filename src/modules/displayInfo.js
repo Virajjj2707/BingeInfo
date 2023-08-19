@@ -4,9 +4,9 @@ import countComments from './commentCounter.js';
 const displayInfo = async (id) => {
   const info = document.querySelector('#info');
   info.style.display = 'block';
-  // fetching particular show from the API
+
   const show = await getOneShow(id);
-  // creating a new div element
+  
   const infoCard = document.createElement('div');
   infoCard.classList.add('info-container');
   infoCard.innerHTML = `
@@ -50,18 +50,18 @@ const displayInfo = async (id) => {
           </div>
         </div>`;
 
-  // adding genre
+  
   const genreCard = infoCard.querySelector('.genre');
   show.genres.forEach((genre) => {
     genreCard.innerHTML += `<span>${genre}</span>`;
   });
   info.appendChild(infoCard);
 
-  // updating comments
+
   const updateComment = async (id) => {
-    // adding comments
+
     const commentCard = document.querySelector('.comments');
-    // fetching particular comments from the API
+    
     const comments = await getComment(id);
     let innerText = '';
     if (!comments.error) {
@@ -81,14 +81,13 @@ const displayInfo = async (id) => {
       commentCard.innerHTML = innerText;
     }
 
-    // adding comment counter
     const commentTitle = document.querySelector('h2');
     commentTitle.innerHTML = `Comments (${countComments()})`;
   };
-  // show comments
+ 
   updateComment(id);
 
-  // posting new comments
+  
   const inputName = document.querySelector('#name');
   const inputComment = document.querySelector('#comments');
   const submitBtn = document.querySelector('#submit');
@@ -103,11 +102,10 @@ const displayInfo = async (id) => {
     updateComment(id);
   };
 
-  // closing info popup
   const closeBtn = document.querySelector(`#close${id}`);
   closeBtn.onclick = () => {
     info.style.display = 'none';
-    // removing the previous infoCard
+
     infoCard.innerHTML = '';
   };
 };
