@@ -28,7 +28,7 @@ window.onload = () => {
     filter.style.display = 'grid';
   };
 
-  
+//   getting which information to show
   const contactBtn = document.querySelector('#contactBtn');
   const homeBtn = document.querySelector('#homeBtn');
   const contact = document.querySelector('#contact');

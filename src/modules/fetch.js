@@ -1,5 +1,7 @@
 import { baseUrl, filterUrl, involvementUrl } from './api.js';
-
+// what components we need right now 
+// shows , likes , comments,pics,rating
+// we need to fetch all the data from the api
 const getShow = async () => {
   const response = await fetch(baseUrl);
   const data = await response.json();

@@ -15,7 +15,7 @@ const displayFilterMovie = async (search) => {
   filterArray.forEach((data) => {
 
     const likes = allLikes.filter((like) => like.item_id === data.id);
-   
+  //  the information is shown with all the data and likes
     const showCard = document.createElement('div');
     showCard.classList.add('container');
     showCard.innerHTML = `<img src="${data.show.image ? data.show.image.original : ''}" alt="${data.show.name} poster">
@@ -51,6 +51,7 @@ const displayFilterMovie = async (search) => {
       }
     };
 
+    // filter the total number of series to be shown
  
     const countMovie = document.querySelector('#counter');
     countMovie.innerHTML = `Total Number of Series: ${filterArray.length}`;
