@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rhaegar121/Movies_Box.git"
+    "url": ""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rhaegar121/Movies_Box/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/Rhaegar121/Movies_Box#readme",
+  "homepage": "",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
