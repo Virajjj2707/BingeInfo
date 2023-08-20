@@ -24,7 +24,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--text-color);
 }
-
+/* footer root where viraj is written */
 :root {
   --card-color: #1b2530;
   --background-color: #0f171e;
@@ -84,6 +84,8 @@ header #link a:active {
   color: var(--text-color);
 }
 
+
+/* hamburger styling */
 .hamburger {
   width: 30px;
   height: 20px;
@@ -102,4 +104,171 @@ header #link a:active {
   transition-duration: 500ms;
 }
 
+.hamburger span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .hamburger span:nth-child(2) {
+    top: 8px;
+    left: 0;
+    opacity: 1;
+  }
+  
+  .hamburger span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+  }
+  
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  
+  /* home interface */
+  #searchBar {
+    width: fit-content;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  #search {
+    width: 450px;
+    height: 50px;
+    padding: 0px 25px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: var(--text-color);
+    background-color: #252e39;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  #search::placeholder {
+    font-size: 16px;
+    color: var(--text-color);
+  }
+  
+  #search:focus {
+    background-color: #1b2530;
+  }
+  
+  #searchBtn {
+    border: none;
+    padding: 14px 16px 14px 12px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #252e39;
+  }
+  
+  #searchBtn:hover {
+    cursor: pointer;
+    background-color: #1b2530;
+  }
+  
+  #searchBtn:hover .fa-magnifying-glass {
+    color: #fff;
+  }
+  
+  .fa-magnifying-glass {
+    font-size: 20px;
+    color: var(--text-color);
+  }
+  
+  #allShowBtn {
+    position: absolute;
+    text-align: center;
+    left: 70px;
+    top: 110px;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 15px;
+    color: var(--text-color);
+    background-color: #252e39;
+  }
+  
+  #allShowBtn:hover {
+    cursor: pointer;
+    background-color: #1b2530;
+  }
+  
+  #counter {
+    position: absolute;
+    text-align: center;
+    right: 76px;
+    top: 110px;
+    padding: 13px 0;
+    width: 240px;
+    color: var(--text-color);
+    background-color: #252e39;
+    border-radius: 3px;
+  }
+  
+  #home #container {
+    width: 98%;
+    display: grid;
+    grid-template-columns: 14.5% 14.5% 14.5% 14.5% 14.5% 14.5%;
+    gap: 25px;
+    margin: 50px auto;
+    padding-left: 55px;
+  }
+  
+  #home #filter {
+    width: 98%;
+    display: none;
+    grid-template-columns: 14.5% 14.5% 14.5% 14.5% 14.5% 14.5%;
+    gap: 25px;
+    margin: 100px auto;
+    padding-left: 55px;
+  }
+  
+  #home .container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-color);
+    border-radius: 5px;
+  }
+  
+  #home .container img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  #home .container .caption {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    background-color: var(--card-color);
+  }
+  
+  #home .container .caption .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
 
