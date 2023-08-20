@@ -1,4 +1,4 @@
-## Technolies Used
+## Technologies Used
 ### HTML
 ### CSS
 ### JavaScript
