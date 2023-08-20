@@ -22,7 +22,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--text-color);
+  background: gray;
 }
 /* footer root where viraj is written */
 :root {

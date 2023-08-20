@@ -6,7 +6,7 @@ window.onload = () => {
   
   displayMovie();
 
-  
+//   reload page when logo is clicked
   const logo = document.querySelector('#logo');
   logo.onclick = () => {
     window.location.reload();
@@ -65,7 +65,7 @@ window.onload = () => {
     allShowBtn.style.display = 'none';
   };
 
-  
+//   action for hamburger menu
   const hamburger = document.querySelector('.hamburger');
   const mobileMenu = document.querySelector('#link');
   const menuToggle = () => {
