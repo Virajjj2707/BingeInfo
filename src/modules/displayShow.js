@@ -10,6 +10,8 @@ const displayMovie = async () => {
   
   const showArray = await getShow();
   
+
+  // container tiles where the the information is shown with all the data and likes
   showArray.forEach((data) => {
     
     const likes = allLikes.filter((like) => like.item_id === data.id);
